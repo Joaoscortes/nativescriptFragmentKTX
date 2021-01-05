@@ -1,0 +1,16 @@
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+dependencies {
+  implementation 'androidx.fragment:fragment-ktx:1.3.0-beta01'
+}
+
+android {
+  defaultConfig {
+    minSdkVersion 17
+    generatedDensities = []
+  }
+  aaptOptions {
+    additionalParameters "--no-version-vectors"
+  }
+}
